@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# prisma
+src/generated/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/
+
+# env
+.env
+.env.*
+!.env.example
+
+# tests
+coverage/
+playwright-report/
+test-results/
+.lighthouse/
+
+# misc
+.DS_Store
+*.log

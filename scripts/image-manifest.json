@@ -1,0 +1,476 @@
+[
+  {
+    "file": "File:Pigeon River Pottery mug - November 2023 - Sarah Stierch.jpg",
+    "kind": "product",
+    "slug": "sirli-el-yapimi-kupa",
+    "index": 1
+  },
+  {
+    "file": "File:2008-05-01Blaue Tasse01.jpg",
+    "kind": "product",
+    "slug": "sirli-el-yapimi-kupa",
+    "index": 2
+  },
+  {
+    "file": "File:Pottery Purple Pie Plate (4231748510).jpg",
+    "kind": "product",
+    "slug": "tas-dokulu-servis-tabagi",
+    "index": 1
+  },
+  {
+    "file": "File:Turkish earthenware pots or guvech.jpg",
+    "kind": "product",
+    "slug": "comlek-kase-seti",
+    "index": 1
+  },
+  {
+    "file": "File:Brown Betty teapot by Sadler 03.jpg",
+    "kind": "product",
+    "slug": "seramik-cay-demligi",
+    "index": 1
+  },
+  {
+    "file": "File:Bollhagen Teekanne.JPG",
+    "kind": "product",
+    "slug": "seramik-cay-demligi",
+    "index": 2
+  },
+  {
+    "file": "File:Raku fired oval vase made by Adil Ghani from RAAQUU(Malaysia)-2021.jpg",
+    "kind": "product",
+    "slug": "raku-pisirim-vazo",
+    "index": 1
+  },
+  {
+    "file": "File:Raku Obvara fired Tsuri vases from RAAQUU Malaysia.jpg",
+    "kind": "product",
+    "slug": "raku-pisirim-vazo",
+    "index": 2
+  },
+  {
+    "file": "File:Cerámica Talavera6.JPG",
+    "kind": "product",
+    "slug": "seramik-zeytinyagi-sisesi",
+    "index": 1
+  },
+  {
+    "file": "File:Cerámica Talavera5.JPG",
+    "kind": "product",
+    "slug": "seramik-zeytinyagi-sisesi",
+    "index": 2
+  },
+  {
+    "file": "File:Espresso Tasse.jpg",
+    "kind": "product",
+    "slug": "espresso-fincan-seti",
+    "index": 1
+  },
+  {
+    "file": "File:Espresso Tassen geflammt, \"handmade in Austria\", Manufaktur Gmundner Keramik.jpg",
+    "kind": "product",
+    "slug": "espresso-fincan-seti",
+    "index": 2
+  },
+  {
+    "file": "File:Dish from Iznik, Turkey, 18th century, Newark Museum.JPG",
+    "kind": "product",
+    "slug": "iznik-desenli-cini-tabak",
+    "index": 1
+  },
+  {
+    "file": "File:Art islamique (Musée des Beaux-Arts de Lyon) (5460311787).jpg",
+    "kind": "product",
+    "slug": "iznik-desenli-cini-tabak",
+    "index": 2
+  },
+  {
+    "file": "File:Dish with a spray of tulips, roses, and hyacinths, Turkey, Iznik, about 1600 AD, composite body, underglaze-painted - Huntington Museum of Art - DSC05013.JPG",
+    "kind": "product",
+    "slug": "iznik-desenli-cini-tabak",
+    "index": 3
+  },
+  {
+    "file": "File:Kütahya Ceramics Museum various gift by Mehmet Gürsoy 9001.jpg",
+    "kind": "product",
+    "slug": "kutahya-cini-kase",
+    "index": 1
+  },
+  {
+    "file": "File:Turkey (Kutahya), Ottoman Period - Deep Bowl - 1915.643 - Cleveland Museum of Art.tif",
+    "kind": "product",
+    "slug": "kutahya-cini-kase",
+    "index": 2
+  },
+  {
+    "file": "File:Tile - Google Art Project (471020).jpg",
+    "kind": "product",
+    "slug": "lale-motifli-cini-karo",
+    "index": 1
+  },
+  {
+    "file": "File:Tile Iznik Met 64.27.17.jpg",
+    "kind": "product",
+    "slug": "lale-motifli-cini-karo",
+    "index": 2
+  },
+  {
+    "file": "File:Vase with cypresses MAD 27823.jpg",
+    "kind": "product",
+    "slug": "hayat-agaci-cini-vazo",
+    "index": 1
+  },
+  {
+    "file": "File:Vase with Hatay motif Iznik Turkey early 16th Quarz ceramic with underglaze painting in cobalt-blue 8493.jpg",
+    "kind": "product",
+    "slug": "hayat-agaci-cini-vazo",
+    "index": 2
+  },
+  {
+    "file": "File:Kütahya Ceramics Museum vase gift by Saban Sukru Sari 8994.jpg",
+    "kind": "product",
+    "slug": "hayat-agaci-cini-vazo",
+    "index": 3
+  },
+  {
+    "file": "File:Turkish coffee in a traditional design cup.jpg",
+    "kind": "product",
+    "slug": "cini-kahve-fincani-seti",
+    "index": 1
+  },
+  {
+    "file": "File:Ariana museulm - islamic pottery - Gobelet et soucoupe - Kütahya (Turquie) - première moitié du XVIII ième siècle - inventaire AR 9541.JPG",
+    "kind": "product",
+    "slug": "cini-kahve-fincani-seti",
+    "index": 2
+  },
+  {
+    "file": "File:Turkish - Bowl - Walters 481732 - View A.jpg",
+    "kind": "product",
+    "slug": "kapakli-cini-sekerlik",
+    "index": 1
+  },
+  {
+    "file": "File:Ariana museum - islamic pottery - Coupe sur piedouche couverte - Kütahya (Turquie) - XIX ième siècle - Inventaire AR 09853.JPG",
+    "kind": "product",
+    "slug": "kapakli-cini-sekerlik",
+    "index": 2
+  },
+  {
+    "file": "File:Four Tiles with Arabesque Design, c. 1560, Ottoman dynasty, Iznik, Turkey - Sackler Museum - DSC02547.JPG",
+    "kind": "product",
+    "slug": "rumi-desenli-duvar-panosu",
+    "index": 1
+  },
+  {
+    "file": "File:Fouta Bleu Art & Bio.jpg",
+    "kind": "product",
+    "slug": "pamuklu-pestemal",
+    "index": 1
+  },
+  {
+    "file": "File:Fouta bohemeria.JPG",
+    "kind": "product",
+    "slug": "pamuklu-pestemal",
+    "index": 2
+  },
+  {
+    "file": "File:Fouta Orange.jpg",
+    "kind": "product",
+    "slug": "pamuklu-pestemal",
+    "index": 3
+  },
+  {
+    "file": "File:Linen table cloth made by Tampella, Finland 1.jpg",
+    "kind": "product",
+    "slug": "keten-masa-ortusu",
+    "index": 1
+  },
+  {
+    "file": "File:Farwayart-Ethnic-woven-pillow-cover3.jpg",
+    "kind": "product",
+    "slug": "el-dokuma-yastik-kilifi",
+    "index": 1
+  },
+  {
+    "file": "File:Persian-Termeh-textile.jpg",
+    "kind": "product",
+    "slug": "el-dokuma-yastik-kilifi",
+    "index": 2
+  },
+  {
+    "file": "File:Silk scarf.JPG",
+    "kind": "product",
+    "slug": "bursa-ipek-sal",
+    "index": 1
+  },
+  {
+    "file": "File:Periodo ottomano, asciugamano, xix secolo 01.jpg",
+    "kind": "product",
+    "slug": "igne-oyali-el-havlusu",
+    "index": 1
+  },
+  {
+    "file": "File:Turkey, 19th century - Embroidered Towel - 1916.1255 - Cleveland Museum of Art.jpg",
+    "kind": "product",
+    "slug": "igne-oyali-el-havlusu",
+    "index": 2
+  },
+  {
+    "file": "File:Napkins (AM 1995.177.36-1).jpg",
+    "kind": "product",
+    "slug": "keten-pecete-seti",
+    "index": 1
+  },
+  {
+    "file": "File:New Handmade Turkish Kilim.jpg",
+    "kind": "product",
+    "slug": "el-dokumasi-anadolu-kilimi",
+    "index": 1
+  },
+  {
+    "file": "File:Vegetable-dyed Turkish Kilim early 20th century.JPG",
+    "kind": "product",
+    "slug": "el-dokumasi-anadolu-kilimi",
+    "index": 2
+  },
+  {
+    "file": "File:Vintage Turkish Kilim Geometric Patterned Rug.jpg",
+    "kind": "product",
+    "slug": "el-dokumasi-anadolu-kilimi",
+    "index": 3
+  },
+  {
+    "file": "File:Farwayart-kilim-pillows.jpg",
+    "kind": "product",
+    "slug": "kilim-minder",
+    "index": 1
+  },
+  {
+    "file": "File:Farwayart-Vintage-tribal-kilim-pillow7.jpg",
+    "kind": "product",
+    "slug": "kilim-yastik-kilifi",
+    "index": 1
+  },
+  {
+    "file": "File:Regione di van, kilim, xx secolo 09.jpg",
+    "kind": "product",
+    "slug": "kilim-yolluk",
+    "index": 1
+  },
+  {
+    "file": "File:Regione di van, kilim, xx secolo 10.jpg",
+    "kind": "product",
+    "slug": "kilim-yolluk",
+    "index": 2
+  },
+  {
+    "file": "File:Double Saddlebag (Heybe) MET DP700909.jpg",
+    "kind": "product",
+    "slug": "cicim-heybe",
+    "index": 1
+  },
+  {
+    "file": "File:FarWayArt-Persian-antique-saddlebag-rug.jpg",
+    "kind": "product",
+    "slug": "cicim-heybe",
+    "index": 2
+  },
+  {
+    "file": "File:Luristan Soumak saddle bag front.JPG",
+    "kind": "product",
+    "slug": "cicim-heybe",
+    "index": 3
+  },
+  {
+    "file": "File:Farwayart-ethnic-mandala-wall-hanging.jpg",
+    "kind": "product",
+    "slug": "dokuma-duvar-halisi",
+    "index": 1
+  },
+  {
+    "file": "File:Woven Wall Hanging MET DP230562.jpg",
+    "kind": "product",
+    "slug": "dokuma-duvar-halisi",
+    "index": 2
+  },
+  {
+    "file": "File:Pedalisa Art Turkish Mosaic Table Lamp.jpg",
+    "kind": "product",
+    "slug": "mozaik-cam-masa-lambasi",
+    "index": 1
+  },
+  {
+    "file": "File:Lighting Turkish table lamp in table.jpg",
+    "kind": "product",
+    "slug": "mozaik-cam-masa-lambasi",
+    "index": 2
+  },
+  {
+    "file": "File:Turkish Mosaic Lamp.jpg",
+    "kind": "product",
+    "slug": "uclu-mozaik-avize",
+    "index": 1
+  },
+  {
+    "file": "File:Turkish Pendant Light (205527).jpg",
+    "kind": "product",
+    "slug": "uclu-mozaik-avize",
+    "index": 2
+  },
+  {
+    "file": "File:Woven rattan lamp bases and lampshades.jpg",
+    "kind": "product",
+    "slug": "hasir-abajur",
+    "index": 1
+  },
+  {
+    "file": "File:Wicker lamp made from banana plant fibre.jpg",
+    "kind": "product",
+    "slug": "hasir-abajur",
+    "index": 2
+  },
+  {
+    "file": "File:Oriental hanging lanterns. Souk Haddadine, Marrakech Medina (سوق الحدادين مراكش).jpg",
+    "kind": "product",
+    "slug": "delikli-bakir-fener",
+    "index": 1
+  },
+  {
+    "file": "File:2 Candle holders on the piano.jpg",
+    "kind": "product",
+    "slug": "seramik-mumluk",
+    "index": 1
+  },
+  {
+    "file": "File:Teelicht 2009.JPG",
+    "kind": "product",
+    "slug": "seramik-mumluk",
+    "index": 2
+  },
+  {
+    "file": "File:Copper cezve.jpg",
+    "kind": "product",
+    "slug": "dovme-bakir-cezve",
+    "index": 1
+  },
+  {
+    "file": "File:Soy-coffee-pot-240-01.jpg",
+    "kind": "product",
+    "slug": "dovme-bakir-cezve",
+    "index": 2
+  },
+  {
+    "file": "File:TurkishCoffeePot.jpg",
+    "kind": "product",
+    "slug": "dovme-bakir-cezve",
+    "index": 3
+  },
+  {
+    "file": "File:Sahanda yumurta.jpg",
+    "kind": "product",
+    "slug": "kalayli-bakir-sahan",
+    "index": 1
+  },
+  {
+    "file": "File:Kupferpfanne Sautoir Plat à sauter Copper pan.jpg",
+    "kind": "product",
+    "slug": "kalayli-bakir-sahan",
+    "index": 2
+  },
+  {
+    "file": "File:Olivenholz-Brettchen.jpg",
+    "kind": "product",
+    "slug": "zeytin-agaci-kesme-tahtasi",
+    "index": 1
+  },
+  {
+    "file": "File:Handmade wooden spoons.jpg",
+    "kind": "product",
+    "slug": "simsir-kasik-seti",
+    "index": 1
+  },
+  {
+    "file": "File:Ложкарь Ракитянский 12.JPG",
+    "kind": "product",
+    "slug": "simsir-kasik-seti",
+    "index": 2
+  },
+  {
+    "file": "File:Copper vessels - Macedonian coppersmithing craft.jpg",
+    "kind": "product",
+    "slug": "bakir-ibrik",
+    "index": 1
+  },
+  {
+    "file": "File:Copper ewer.JPG",
+    "kind": "product",
+    "slug": "bakir-ibrik",
+    "index": 2
+  },
+  {
+    "file": "File:Tray showing converging lines.jpg",
+    "kind": "product",
+    "slug": "ceviz-servis-tepsisi",
+    "index": 1
+  },
+  {
+    "file": "File:Tray with espresso cups.jpg",
+    "kind": "product",
+    "slug": "ceviz-servis-tepsisi",
+    "index": 2
+  },
+  {
+    "file": "File:Kars museo etnologico, vassoio con incisioni 01.jpg",
+    "kind": "product",
+    "slug": "kakma-bakir-tepsi",
+    "index": 1
+  },
+  {
+    "file": "File:12 Valladolid 2013 Feria Ceramica Vitigudino Lou.jpg",
+    "kind": "category",
+    "slug": "seramik",
+    "index": 1
+  },
+  {
+    "file": "File:Kütahya porcelain shop 2.jpg",
+    "kind": "category",
+    "slug": "cini",
+    "index": 1
+  },
+  {
+    "file": "File:فوطة تونسبة.jpg",
+    "kind": "category",
+    "slug": "tekstil",
+    "index": 1
+  },
+  {
+    "file": "File:Isparta museum cicim detail 022.jpg",
+    "kind": "category",
+    "slug": "kilim",
+    "index": 1
+  },
+  {
+    "file": "File:Istanbul - panoramio (14).jpg",
+    "kind": "category",
+    "slug": "aydinlatma",
+    "index": 1
+  },
+  {
+    "file": "File:Copper teapots, Malatya 01.jpg",
+    "kind": "category",
+    "slug": "bakir-ahsap",
+    "index": 1
+  },
+  {
+    "file": "File:Markt Istanbul (5780778089).jpg",
+    "kind": "hero",
+    "slug": "hero-1",
+    "index": 1
+  },
+  {
+    "file": "File:Avanos-Poterie (12).jpg",
+    "kind": "hero",
+    "slug": "hero-2",
+    "index": 1
+  }
+]
