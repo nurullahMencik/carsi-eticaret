@@ -112,10 +112,13 @@ export default async function AdminOrderPage({ params }: { params: Promise<{ id:
               {order.carrier ? <p className="mt-3 text-sm">{fmt(dict.account.trackingNumber, { carrier: order.carrier, number: order.trackingNumber ?? "" })}</p> : null}
             </Panel>
             <Panel title={o.payments}>
+              {order.payments.length === 0 ? <p className="text-sm text-ink-2">{o.noPayments}</p> : null}
               <ul className="space-y-2 text-sm">
                 {order.payments.map((p) => (
                   <li key={p.id} className="flex flex-wrap items-center gap-2">
-                    <Badge tone={p.status === "SUCCEEDED" ? "success" : p.status === "FAILED" ? "danger" : p.status === "REFUNDED" ? "warning" : "neutral"}>{p.status}</Badge>
+                    <Badge tone={p.status === "SUCCEEDED" ? "success" : p.status === "FAILED" ? "danger" : p.status === "REFUNDED" ? "warning" : "neutral"}>
+                      {(dict.attemptStatus as Record<string, string>)[p.status] ?? p.status}
+                    </Badge>
                     <span className="num">{formatTRY(p.amount)}</span>
                     <span className="text-xs text-ink-2">{p.provider === "DEMO" ? o.demo : "iyzico"}</span>
                     {p.errorCode ? <span className="text-xs text-danger">{p.errorCode}</span> : null}

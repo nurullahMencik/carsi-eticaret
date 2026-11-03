@@ -7,7 +7,8 @@ import { I18nProvider } from "@/lib/i18n/client";
 import { getI18n } from "@/lib/i18n/server";
 import { isTheme, THEME_COOKIE } from "@/lib/theme";
 
-const fraunces = Fraunces({ subsets: ["latin", "latin-ext"], variable: "--font-fraunces", display: "swap", axes: ["opsz"] });
+// The display face is not preloaded so it does not compete with the LCP image; headings swap in.
+const fraunces = Fraunces({ subsets: ["latin", "latin-ext"], weight: ["500"], variable: "--font-fraunces", display: "swap", preload: false });
 const instrument = Instrument_Sans({ subsets: ["latin", "latin-ext"], variable: "--font-instrument", display: "swap" });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -23,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: locale === "en" ? "en_GB" : "tr_TR",
       title: `${dict.meta.siteName} · ${dict.meta.tagline}`,
       description: dict.meta.description,
-      images: [{ url: "/og.png", width: 1200, height: 630, alt: dict.meta.siteName }],
+      images: [{ url: "/og.jpg", width: 1200, height: 630, alt: dict.meta.siteName }],
     },
     twitter: { card: "summary_large_image" },
   };

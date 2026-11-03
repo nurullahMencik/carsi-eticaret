@@ -7,17 +7,18 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import bcrypt from "bcryptjs";
-import { createPrismaClient } from "../src/lib/db";
+import { createPrismaClient, type Db } from "../src/lib/db";
 import { generateOrderNumber } from "../src/lib/domain/order-number";
 import { calculateTotals } from "../src/lib/domain/pricing";
 import { buildSearchText } from "../src/lib/domain/search";
 import type { CouponRule } from "../src/lib/domain/coupon";
 import { categories, products, type CatalogProduct, type CatalogVariant } from "./data/catalog";
 
-const db = createPrismaClient();
+let db: Db;
 const DAY = 86_400_000;
-const NOW = new Date();
+let NOW = new Date();
 
 // ---------------------------------------------------------------- deterministic randomness
 function mulberry32(seed: number) {
@@ -157,7 +158,10 @@ async function wipe() {
   await db.user.deleteMany();
 }
 
-async function main() {
+/** Wipes and re-creates all demo data. Exported for the container bootstrap. */
+export async function seed(client: Db) {
+  db = client;
+  NOW = new Date();
   const started = Date.now();
   await wipe();
   const credits = loadCredits();
@@ -631,9 +635,13 @@ async function main() {
   console.log(`[seed] done in ${Date.now() - started} ms`, counts);
 }
 
-main()
-  .catch((error) => {
-    console.error(error);
-    process.exitCode = 1;
-  })
-  .finally(() => db.$disconnect());
+// Run directly: `prisma db seed` / `tsx prisma/seed.ts`.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const client = createPrismaClient();
+  seed(client)
+    .catch((error) => {
+      console.error(error);
+      process.exitCode = 1;
+    })
+    .finally(() => client.$disconnect());
+}

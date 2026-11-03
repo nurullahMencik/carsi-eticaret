@@ -11,7 +11,7 @@ export function Logo({ href = "/", label = "Çarşı" }: { href?: string; label?
         </g>
         <circle cx="32" cy="32" r="5" className="fill-canvas" />
       </svg>
-      <span className="font-display text-[1.6rem] leading-none font-semibold tracking-tight text-ink">Çarşı</span>
+      <span className="font-display text-[1.6rem] leading-none font-medium tracking-tight text-ink">Çarşı</span>
     </Link>
   );
 }

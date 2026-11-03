@@ -5,11 +5,10 @@ import { formatTRY } from "@/lib/domain/money";
 import { useI18n } from "@/lib/i18n/client";
 import type { DailyPoint } from "@/lib/services/admin/dashboard";
 
-const compact = new Intl.NumberFormat("tr-TR", { notation: "compact", maximumFractionDigits: 1 });
-
 /** Single-series area chart: one hue, 2px line, recessive grid, crosshair tooltip. */
 export default function RevenueChart({ data }: { data: DailyPoint[] }) {
   const { dict, locale } = useI18n();
+  const compact = new Intl.NumberFormat(locale === "en" ? "en-GB" : "tr-TR", { notation: "compact", maximumFractionDigits: 1 });
   const dayFmt = new Intl.DateTimeFormat(locale === "en" ? "en-GB" : "tr-TR", { day: "numeric", month: "short", timeZone: "UTC" });
   const label = (day: string) => dayFmt.format(new Date(`${day}T00:00:00Z`));
   return (

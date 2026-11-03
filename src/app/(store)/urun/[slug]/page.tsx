@@ -5,7 +5,7 @@ import { ChevronRight, Truck } from "lucide-react";
 import { ProductGrid } from "@/components/store/product-card";
 import { ProductGallery } from "@/components/store/product-gallery";
 import { PurchasePanel } from "@/components/store/purchase-panel";
-import { ReviewForm } from "@/components/store/review-form";
+import { ReviewFormLazy } from "@/components/store/review-form-lazy";
 import { Alert } from "@/components/ui/alert";
 import { Stars } from "@/components/ui/stars";
 import { getActor } from "@/lib/auth/session";
@@ -186,7 +186,7 @@ export default async function ProductPage({ params }: Props) {
               </div>
             ) : null}
             {eligibility.canReview ? (
-              <ReviewForm productId={product.id} slug={product.slug} />
+              <ReviewFormLazy productId={product.id} slug={product.slug} />
             ) : (
               <Alert tone="info">
                 {eligibility.reason === "REVIEW_EXISTS" ? (

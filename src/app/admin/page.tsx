@@ -14,11 +14,12 @@ export async function generateMetadata(): Promise<Metadata> {
   return { title: dict.admin.dashboard.title };
 }
 
-function Change({ value, label }: { value: number | null; label: string }) {
+function Change({ value, label, locale }: { value: number | null; label: string; locale: string }) {
   if (value === null) return null;
   const up = value >= 0;
   const Icon = up ? ArrowUpRight : ArrowDownRight;
-  const pct = `${up ? "+" : "−"}${Math.abs(value * 100).toLocaleString("tr-TR", { maximumFractionDigits: 1 })}%`;
+  // tr-TR writes the percent sign first: "+%33,8".
+  const pct = new Intl.NumberFormat(locale === "en" ? "en-GB" : "tr-TR", { style: "percent", signDisplay: "exceptZero", maximumFractionDigits: 1 }).format(value);
   return (
     <p className={`mt-2 inline-flex items-center gap-1 text-xs ${up ? "text-success" : "text-danger"}`}>
       <Icon aria-hidden className="size-3.5" />
@@ -58,7 +59,7 @@ export default async function DashboardPage() {
             <p className="mt-1.5 text-2xl font-semibold tracking-tight num" data-testid="kpi-value">
               {k.value}
             </p>
-            {"change" in k ? <Change value={k.change ?? null} label={d.vsPrevious} /> : <p className="mt-2 text-xs text-ink-2">{k.sub}</p>}
+            {"change" in k ? <Change value={k.change ?? null} label={d.vsPrevious} locale={locale} /> : <p className="mt-2 text-xs text-ink-2">{k.sub}</p>}
           </li>
         ))}
       </ul>

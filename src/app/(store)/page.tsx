@@ -45,7 +45,7 @@ export default async function HomePage() {
                 priority
                 fetchPriority="high"
                 sizes="(min-width: 1280px) 600px, (min-width: 768px) 48vw, 100vw"
-                quality={70}
+                quality={55}
                 className="object-cover"
               />
             ) : (

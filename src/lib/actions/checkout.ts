@@ -102,6 +102,9 @@ export async function retryIyzicoAction(orderNumber: string): Promise<ActionResu
 export async function payWithDemoCardAction(input: DemoCardInput): Promise<ActionResult> {
   const actor = await getActor();
   if (!actor) return { ok: false, error: "UNAUTHENTICATED" };
+  // Test cards are only accepted while the demo provider is active; with iyzico configured
+  // this action must not be usable to mark orders as paid.
+  if (activeProviderId() !== "DEMO") return { ok: false, error: "FORBIDDEN" };
   const parsed = demoCardSchema.safeParse(input);
   if (!parsed.success) return { ok: false, error: "VALIDATION", fieldErrors: fieldErrors(parsed.error) };
   const order = await db.order.findUnique({ where: { number: parsed.data.orderNumber } });

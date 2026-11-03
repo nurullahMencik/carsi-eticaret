@@ -22,7 +22,7 @@ export async function Header() {
   const iconLink = "relative inline-flex size-10 items-center justify-center rounded-full text-ink hover:bg-surface-2";
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-canvas/92 backdrop-blur supports-[backdrop-filter]:bg-canvas/80">
-      <p className="bg-ink px-4 py-2 text-center text-xs text-canvas sm:text-[0.8rem]">{dict.header.announcement}</p>
+      <p className="bg-ink px-4 py-2 text-center text-xs text-canvas sm:text-[0.8rem] dark:bg-surface-2 dark:text-ink">{dict.header.announcement}</p>
       <div className="container-page flex h-16 items-center gap-3">
         <MobileNav
           categories={categories.map((c) => ({ slug: c.slug, name: c.name }))}

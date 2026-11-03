@@ -31,7 +31,7 @@ export default async function PaymentPage({ params, searchParams }: { params: Pr
     <div className="container-page pt-10">
       <CheckoutSteps current="payment" dict={dict} />
       <div className="mt-6 mb-8 flex flex-wrap items-end justify-between gap-4">
-        <h1 className="font-display text-4xl sm:text-5xl">{dict.checkout.paymentTitle}</h1>
+        <h1 className="font-display text-4xl sm:text-5xl">{dict.checkout.title}</h1>
         <dl className="text-right text-sm">
           <dt className="text-ink-2">{dict.checkout.orderNumber}</dt>
           <dd className="font-mono font-semibold" data-testid="order-number">

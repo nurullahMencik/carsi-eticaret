@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useTransition } from "react";
+import { useState, useTransition } from "react";
 import { SlidersHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
@@ -26,19 +26,27 @@ export function CatalogFilters({ state, categories }: { state: ListState; catego
   const { dict } = useI18n();
   const router = useRouter();
   const [pending, start] = useTransition();
+  const [open, setOpen] = useState(false);
   const go = (overrides: Partial<Record<keyof ListState, string | number | boolean | undefined>>) =>
     start(() => router.push(buildListUrl("/urunler", state, overrides), { scroll: false }));
 
   return (
-    <details className="group rounded-2xl border border-line bg-surface lg:border-0 lg:bg-transparent" open>
-      <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 text-sm font-semibold lg:hidden">
+    <div className="rounded-2xl border border-line bg-surface lg:border-0 lg:bg-transparent">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-controls="catalog-filters"
+        className="flex w-full items-center gap-2 px-4 py-3 text-sm font-semibold lg:hidden"
+      >
         <SlidersHorizontal aria-hidden className="size-4" />
         {dict.catalog.showFilters}
-      </summary>
+      </button>
       <form
+        id="catalog-filters"
         action="/urunler"
         method="get"
-        className={cn("space-y-7 px-4 pb-5 lg:px-0 lg:pb-0", pending && "opacity-70")}
+        className={cn("space-y-7 px-4 pb-5 lg:block lg:px-0 lg:pb-0", open ? "block" : "hidden", pending && "opacity-70")}
         onSubmit={(e) => {
           e.preventDefault();
           const data = new FormData(e.currentTarget);
@@ -123,7 +131,7 @@ export function CatalogFilters({ state, categories }: { state: ListState; catego
           </a>
         ) : null}
       </form>
-    </details>
+    </div>
   );
 }
 

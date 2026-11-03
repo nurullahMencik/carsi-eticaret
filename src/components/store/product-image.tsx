@@ -42,7 +42,7 @@ export function ProductImage({
       priority={priority}
       fetchPriority={priority ? "high" : undefined}
       unoptimized={external}
-      quality={70}
+      quality={priority ? 55 : 70}
       className={cn("object-cover", className)}
       onError={() => setFailed(true)}
     />
